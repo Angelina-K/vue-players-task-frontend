@@ -1,0 +1,28 @@
+.simple-btn {
+  font-size: rem(14px);
+  padding: em(8px) em(15px);
+  border-radius: $border-radius;
+  background-color: $first;
+  color: $lightest;
+  @include for-normal-layout {
+    font-size: rem(16px);
+  }
+
+  &:active {
+    padding: em(7px) em(14px);
+  }
+}
+
+.close-btn {
+  border: none;
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  border-radius: 50%;
+  // background-color: #fff;
+  // color: $clr2;
+  transition: background-color 0.1s ease;
+  // &:hover {
+  //   background-color: $clr8;
+  // }
+}

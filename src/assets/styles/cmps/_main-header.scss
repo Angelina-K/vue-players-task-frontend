@@ -1,0 +1,59 @@
+.wrapper {
+  background-color: $second;
+}
+.main-header {
+  padding: 3vw 0;
+  justify-content: space-between;
+  align-items: center;
+  color: $lightest;
+
+  nav {
+    display: none;
+    gap: 2.5vw;
+    font-size: rem(16px);
+    a {
+      color: $lightest;
+    }
+
+    a.active {
+      color: $first;
+      font-weight: bolder;
+    }
+    @include for-normal-layout {
+      display: flex;
+    }
+
+    &.show-mobile {
+      display: flex;
+      flex-direction: column;
+      background-color: $light;
+      box-shadow: $shadow;
+      position: fixed;
+      z-index: 5;
+      right: 0;
+      top: 0;
+      width: 100%;
+      align-items: center;
+      padding: 80px 0px 20px 0px;
+      border-bottom: 1px solid $md-dark;
+      a {
+        text-align: center;
+        padding-bottom: 10px;
+      }
+    }
+  }
+}
+
+.menu-btn {
+  font-size: rem(25px);
+  z-index: 6;
+  width: 40px;
+  height: 40px;
+  margin: 20px;
+  border-radius: 50%;
+  right: 3%;
+  background-color: transparent;
+  @include for-normal-layout {
+    display: none;
+  }
+}

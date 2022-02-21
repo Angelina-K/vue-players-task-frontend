@@ -1,0 +1,15 @@
+.main-page {
+  flex-direction: column;
+  select {
+    align-self: center;
+    margin-bottom: 2vw;
+    padding: 8px 15px;
+    border-radius: $border-radius;
+  }
+  .lists {
+    flex-direction: column;
+    @include for-normal-layout {
+      flex-direction: row;
+    }
+  }
+}

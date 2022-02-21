@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Opensans, sans-serif;
+}
+
+body {
+  margin: 0;
+  color: $darkest;
+  background-color: $light;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+}
+
+h1 {
+  font-size: 24px;
+  line-height: 1.5em;
+}
+
+h2 {
+  line-height: 1.5em;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+img {
+  width: 100%;
+}
+
+p {
+  margin: 0px;
+}
+
+a {
+  color: $darkest;
+  text-decoration: none;
+}
